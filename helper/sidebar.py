@@ -117,7 +117,8 @@ class SidebarUIElement(unohelper.Base, XUIElement, XToolPanel, XSidebarPanel, XN
         self._values = {}
         try:
             self.window = self._call_macro(settings.Initialize, (self, self.parent))
-        except:
+        except Exception as e:
+            print(e)
             raise RuntimeException("Error while calling Initialize for " + self.res_url, None)
     
     # XUIElement
@@ -153,6 +154,10 @@ class SidebarUIElement(unohelper.Base, XUIElement, XToolPanel, XSidebarPanel, XN
             except:
                 pass
         return LayoutSize(0, -1, 0)
+    
+    # LO5.1-
+    def getMinimalWidth(self):
+        return 50
     
     # 
     def _call_macro(self, uri, args=()):
