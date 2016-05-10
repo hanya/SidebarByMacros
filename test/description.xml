@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<description xmlns="http://openoffice.org/extensions/description/2006"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:d="http://openoffice.org/extensions/description/2006">
+
+<!-- Update these entries to make your extension identical. -->
+<identifier value="mytools.ui.test.SidebarByMacros" />
+
+<!-- Extension version. -->
+<version value="0.1.0" />
+
+<!-- Name of your extension. -->
+<display-name>
+<name lang="en-US">Test sidebar</name>
+</display-name>
+
+<!-- Short description of your extension shown in the extension manager
+ can be stored in these files. -->
+<extension-description>
+<src lang="en-US" xlink:href="descs/desc_en-US.txt"/>
+</extension-description>
+
+<!-- If you have icon (42 x 42 pixel) shown in the extension manager. -->
+<!--
+<default xlink:href="icons/mri.png"/>
+<high-contrast xlink:href="icons/mri_hc.png"/>
+</icon>
+-->
+<!-- If you need license to be shown while installation -->
+<!-- 
+<registration>
+<simple-license accept-by="admin" default-license-id="this" suppress-on-update="true" suppress-if-required="true">
+<license-text xlink:href="LICENSE" lang="en" license-id="this" />
+</simple-license>
+</registration>
+-->
+<dependencies>
+<OpenOffice.org-minimal-version value="4.0" d:name="OpenOffice.org 4.0" />
+</dependencies>
+</description>

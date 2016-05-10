@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data 
+    xmlns:install="http://openoffice.org/2004/installation" 
+    xmlns:oor="http://openoffice.org/2001/registry" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  oor:name="SidebarsByMacros" 
+  oor:package="mytools.UI">
+  <node oor:name="Content">
+    <node oor:name="Imples">
+      <node oor:name="private:resource/toolpanel/foo.bar/MyPanel1" oor:op="replace">
+        <prop oor:name="Initialize">
+          <value>vnd.sun.star.script:Standard.Module1.Initialize?location=application&amp;language=Basic</value>
+        </prop>
+      </node>
+    </node>
+  </node>
+</oor:component-data>

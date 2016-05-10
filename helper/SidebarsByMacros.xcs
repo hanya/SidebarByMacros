@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-schema  
+  oor:name="SidebarsByMacros" 
+  oor:package="mytools.UI" xml:lang="en-US" 
+  xmlns:oor="http://openoffice.org/2001/registry" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <templates>
+    <group oor:name="Imple">
+      <info>
+        <desc>Information about each sidebar implementation.</desc>
+      </info>
+      <prop oor:name="Initialize" oor:type="xs:string">
+        <info>
+          <desc>Path to macro which takes UI element and returns panel window.</desc>
+        </info>
+      </prop>
+    </group>
+  </templates>
+  <component>
+    <group oor:name="Content">
+      <info>
+        <desc>Sidebars written in Macros.</desc>
+      </info>
+      <set oor:name="Imples" oor:node-type="Imple">
+        <info>
+          <desc>List of sidebars.</desc>
+        </info>
+      </set>
+    </group>
+  </component>
+</oor:component-schema>

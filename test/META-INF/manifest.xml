@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:manifest>
+<!-- Update this entry to match your library name -->
+<manifest:file-entry manifest:full-path="YOUR_LIBRARY/" 
+ manifest:media-type="application/vnd.sun.star.basic-library"/>
+
+<manifest:file-entry manifest:full-path="Sidebar.xcu"
+ manifest:media-type="application/vnd.sun.star.configuration-data"/>
+<manifest:file-entry manifest:full-path="SidebarsByMacros.xcu"
+ manifest:media-type="application/vnd.sun.star.configuration-data"/>
+</manifest:manifest>
