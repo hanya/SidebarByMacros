@@ -25,7 +25,8 @@ Your panel have to be registered under "Imples" node with identical name.
 
 Here is an example with named as "MyPanel1". 
 
-```   <node oor:name="private:resource/toolpanel/foo.bar/MyPanel1" oor:op="replace">
+```
+   <node oor:name="private:resource/toolpanel/foo.bar/MyPanel1" oor:op="replace">
         <prop oor:name="Initialize">
           <value>vnd.sun.star.script:Standard.Module1.Initialize?location=application&amp;language=Basic</value>
         </prop>
@@ -115,6 +116,7 @@ Here is an example panel defined.
       </node>
     </node>
 ```
+
 "MyPanel1" have to be identical. 
 - Title: shown in the top of your panel inside the deck.
 - TitleBarIsOptional: if true, no title bar is shown if the deck contains single panel.
