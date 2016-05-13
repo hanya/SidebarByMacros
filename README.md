@@ -33,6 +33,8 @@ The following Basic code provides initialization of the desk.
 ' @return panel window
 
 Function Initialize( oElement as Variant, oParent as Variant ) As Variant
+  ' Your dialog as panel placed into your dock.
+  ' Set "With title bar" to No on your dialog to be embedded on the dialog editor.
   window = CreateChildWindow("$(user)/basic/Standard/Dialog3.xdl", oParent, True)
   window.setPosSize(0, 0, 0, 0, com.sun.star.awt.PosSize.POS)
   Initialize = window       ' return value
